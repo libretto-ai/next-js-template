@@ -13,16 +13,16 @@ yarn install
 Then, run the development server, with your OpenAI API key as an environment variable:
 
 ```bash
-OPENAI_API_KEY=sk-<your api key here> npm run dev
+OPENAI_API_KEY=<your api key here, starting with sk-> npm run dev
 # or
-OPENAI_API_KEY=sk-<your api key here> yarn dev
+OPENAI_API_KEY=<your api key here, starting with sk-> yarn dev
 # or
-OPENAI_API_KEY=sk-<your api key here> pnpm dev
+OPENAI_API_KEY=<your api key here, starting with sk-> pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see a demo application, which is a blog posting application that uses OpenAI and GPT to provide helpful features for the end user. As you type in the blog input box, every 100 characters or so, the application suggests titles and tags for the post. There are also buttons to add another paragraph to the post or add a concluding paragraph.
 
-To see how these are implemented, check out the files under `src/app/api`. They are all imaginary functions (functions with a declaration and a descriptive comment but no implementation) that are replaced at runtime with call to GPT.
+To see how these are implemented, check out the files under `src/imaginary-functions` and `/src/app/api`. They are all imaginary functions (functions with a declaration and a descriptive comment but no implementation) that are replaced at runtime with call to GPT.
 
 ## Learn More
 
