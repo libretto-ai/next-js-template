@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project demonstrating how to use [`imaginary-dev`](https://imaginary.dev/).
+This is a [Next.js](https://nextjs.org/) project demonstrating how to use [`imaginary-dev`](https://imaginary.dev/). It shows a demo blogging app which suggests titles and tags for the blog post as you type. I also includes a button to add more paragraphs of text to the post. You can see a live demo of it at [https://next-js-template-imaginary-dev.vercel.app/](https://next-js-template-imaginary-dev.vercel.app/).
 
 ## Getting Started
 
