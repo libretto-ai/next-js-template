@@ -3,10 +3,10 @@
 import { useState } from "react";
 import { diffChars } from "diff";
 
-import { GET as titlesForBlogPost } from "./api/titlesForBlogPost/route";
-import { GET as tagsForBlogPost } from "./api/tagsForBlogPost/route";
-import { GET as addParagraphToBlogPost } from "./api/addParagraphToBlogPost/route";
-import { GET as addConcludingParagraphToBlogPost } from "./api/addConcludingParagraphToBlogPost/route";
+import titlesForBlogPost from "../imaginary-functions/titlesForBlogPost";
+import tagsForBlogPost from "../imaginary-functions/tagsForBlogPost";
+import addParagraphToBlogPost from "../imaginary-functions/addParagraphToBlogPost";
+import addConcludingParagraphToBlogPost from "../imaginary-functions/addConcludingParagraphToBlogPost";
 
 export default function Home() {
   const [blogTitle, setBlogTitle] = useState("");
