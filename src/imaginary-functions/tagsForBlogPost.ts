@@ -1,4 +1,4 @@
-import { makeImaginaryNextAppRouteFunction } from "@imaginary-dev/nextjs-util";
+import { imagineAppRoute } from "@imaginary-dev/nextjs-util";
 
 /**
  * This function takes in a blog post text and returns at least 5 good tags for the blog post.
@@ -11,7 +11,4 @@ import { makeImaginaryNextAppRouteFunction } from "@imaginary-dev/nextjs-util";
  */
 declare function tagsForBlogPost(blogPostText: string): Promise<Array<string>>;
 
-export default makeImaginaryNextAppRouteFunction(
-  tagsForBlogPost,
-  "/api/tagsForBlogPost"
-);
+export default imagineAppRoute(tagsForBlogPost, "/api/tagsForBlogPost");

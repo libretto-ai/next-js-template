@@ -1,4 +1,4 @@
-import { makeImaginaryNextAppRouteFunction } from "@imaginary-dev/nextjs-util";
+import { imagineAppRoute } from "@imaginary-dev/nextjs-util";
 
 /**
  * This function takes in an incomplete blog post text and returns another paragraph
@@ -13,7 +13,7 @@ import { makeImaginaryNextAppRouteFunction } from "@imaginary-dev/nextjs-util";
  */
 declare function addParagraphToBlogPost(blogPostText: string): Promise<string>;
 
-export default makeImaginaryNextAppRouteFunction(
+export default imagineAppRoute(
   addParagraphToBlogPost,
   "/api/addParagraphToBlogPost"
 );
