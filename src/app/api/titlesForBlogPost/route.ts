@@ -1,2 +1,2 @@
-import func from "../../../imaginary-functions/titlesForBlogPost";
+import func from "@/imaginary-functions/titlesForBlogPost";
 export const { GET } = func;
