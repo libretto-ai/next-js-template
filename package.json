@@ -8,6 +8,12 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "browserslist": [
+    "chrome 100",
+    "edge 100",
+    "safari 11",
+    "firefox 100"
+  ],
   "dependencies": {
     "@imaginary-dev/babel-transformer": "^0.0.4",
     "@imaginary-dev/nextjs-util": "^0.0.8",

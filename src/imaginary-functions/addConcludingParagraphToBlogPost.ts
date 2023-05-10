@@ -1,5 +1,4 @@
-import { imagineAppRoute } from "@imaginary-dev/nextjs-util";
-
+"use server";
 /**
  * This function takes in an incomplete blog post text and returns a concluding paragraph
  * of the blog post, written in the same style, and summing up the main points of the
@@ -11,11 +10,6 @@ import { imagineAppRoute } from "@imaginary-dev/nextjs-util";
  * @openai `{"temperature": 0.7}`
  * @imaginary
  */
-declare function addConcludingParagraphToBlogPost(
+export declare function addConcludingParagraphToBlogPost(
   blogPostText: string
 ): Promise<string>;
-
-export default imagineAppRoute(
-  addConcludingParagraphToBlogPost,
-  "/api/addConcludingParagraphToBlogPost"
-);

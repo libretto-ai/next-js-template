@@ -1,12 +1,12 @@
 "use client";
 
-import { useState } from "react";
 import { diffChars } from "diff";
+import { useState } from "react";
 
-import titlesForBlogPost from "../imaginary-functions/titlesForBlogPost";
-import tagsForBlogPost from "../imaginary-functions/tagsForBlogPost";
-import addParagraphToBlogPost from "../imaginary-functions/addParagraphToBlogPost";
-import addConcludingParagraphToBlogPost from "../imaginary-functions/addConcludingParagraphToBlogPost";
+import { addConcludingParagraphToBlogPost } from "../imaginary-functions/addConcludingParagraphToBlogPost";
+import { addParagraphToBlogPost } from "../imaginary-functions/addParagraphToBlogPost";
+import { tagsForBlogPost } from "../imaginary-functions/tagsForBlogPost";
+import { titlesForBlogPost } from "../imaginary-functions/titlesForBlogPost";
 
 export default function Home() {
   const [blogTitle, setBlogTitle] = useState("");

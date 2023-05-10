@@ -1,4 +1,4 @@
-import { imagineAppRoute } from "@imaginary-dev/nextjs-util";
+"use server";
 
 /**
  * This function takes in the text from a blog post and returns 5 snappy, exciting, and creative
@@ -11,6 +11,6 @@ import { imagineAppRoute } from "@imaginary-dev/nextjs-util";
  *
  * @imaginary
  */
-declare function titlesForBlogPost(blogPostText: string): Promise<string[]>;
-
-export default imagineAppRoute(titlesForBlogPost, "/api/titlesForBlogPost");
+export declare function titlesForBlogPost(
+  blogPostText: string
+): Promise<string[]>;

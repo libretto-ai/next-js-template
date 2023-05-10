@@ -1,5 +1,4 @@
-import { imagineAppRoute } from "@imaginary-dev/nextjs-util";
-
+"use server";
 /**
  * This function takes in an incomplete blog post text and returns another paragraph
  * of the blog post, written in the same style, and continuing the general argument or
@@ -11,9 +10,6 @@ import { imagineAppRoute } from "@imaginary-dev/nextjs-util";
  * @openai `{"temperature": 0.7}`
  * @imaginary
  */
-declare function addParagraphToBlogPost(blogPostText: string): Promise<string>;
-
-export default imagineAppRoute(
-  addParagraphToBlogPost,
-  "/api/addParagraphToBlogPost"
-);
+export declare function addParagraphToBlogPost(
+  blogPostText: string
+): Promise<string>;
