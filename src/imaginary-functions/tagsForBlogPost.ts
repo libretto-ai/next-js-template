@@ -1,5 +1,4 @@
-import { imagineAppRoute } from "@imaginary-dev/nextjs-util";
-
+"use server";
 /**
  * This function takes in a blog post text and returns at least 5 good tags for the blog post.
  * The tags should be generally applicable blog tags used to categorize blog posts.
@@ -9,6 +8,6 @@ import { imagineAppRoute } from "@imaginary-dev/nextjs-util";
  *
  * @imaginary
  */
-declare function tagsForBlogPost(blogPostText: string): Promise<Array<string>>;
-
-export default imagineAppRoute(tagsForBlogPost, "/api/tagsForBlogPost");
+export declare function tagsForBlogPost(
+  blogPostText: string
+): Promise<string[]>;
